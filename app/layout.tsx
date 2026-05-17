@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AAAAAAAA TEST",
+  title: "Carlos Fenoll - Fotografía",
   description: "Fotografía de eventos",
 };
 
