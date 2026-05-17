@@ -210,10 +210,15 @@ export default function PhotographyPortfolio() {
           </div>
 
           <form
-            action="https://formsubmit.co/carlosfenollphoto@gmail.com"
-            method="POST"
-            className="space-y-6"
-          >
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  className="space-y-6"
+>
+  <input
+  type="hidden"
+  name="access_key"
+  value="44068ee9-1d29-4d0d-bc5f-d7f291934609"
+/>
             <input type="hidden" name="_captcha" value="false" />
 
             <input
