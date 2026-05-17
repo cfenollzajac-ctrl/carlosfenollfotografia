@@ -94,11 +94,11 @@ export default function PhotographyPortfolio() {
 
           <div className="mt-8">
             <a
-              href="#gallery"
-              className="inline-flex items-center border border-white/20 px-6 py-3 rounded-full text-sm tracking-wide text-white hover:bg-white hover:text-black transition-all duration-300"
-            >
-              Ver trabajo
-            </a>
+  href="#contact"
+  className="inline-flex items-center border border-white/20 px-6 py-3 rounded-full text-sm tracking-wide text-white hover:bg-white hover:text-black transition-all duration-300"
+>
+  Contacto
+</a>
           </div>
 
         </div>
