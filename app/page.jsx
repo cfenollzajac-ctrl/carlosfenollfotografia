@@ -125,30 +125,27 @@ export default function PhotographyPortfolio() {
       </section>
 
       {/* Info Section */}
-      <section className="py-10 md:py-12 border-t border-white/10 bg-neutral-950">
+      <section className="py-20 md:py-28 bg-neutral-950">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="grid md:grid-cols-3 gap-10 md:gap-16">
-            <div>
-              <p className="text-[11px] uppercase tracking-[0.25em] text-white/35 mb-3">
-                Enfoque
-              </p>
-              <p className="text-sm text-white/55 leading-relaxed">
+          <div className="grid md:grid-cols-3">
+            <div className="border-t border-white/20 pt-8 pb-12 md:pb-0 md:pr-16">
+              <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 mb-5">01</p>
+              <p className="text-[11px] uppercase tracking-[0.25em] text-white/60 mb-4">Enfoque</p>
+              <p className="text-sm text-white/50 leading-relaxed">
                 Cobertura natural y discreta, centrada en el ambiente y las personas.
               </p>
             </div>
-            <div>
-              <p className="text-[11px] uppercase tracking-[0.25em] text-white/35 mb-3">
-                Trabajo
-              </p>
-              <p className="text-sm text-white/55 leading-relaxed">
+            <div className="border-t border-white/20 pt-8 pb-12 md:pb-0 md:px-16">
+              <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 mb-5">02</p>
+              <p className="text-[11px] uppercase tracking-[0.25em] text-white/60 mb-4">Trabajo</p>
+              <p className="text-sm text-white/50 leading-relaxed">
                 Eventos culturales, encuentros institucionales y espacios educativos.
               </p>
             </div>
-            <div>
-              <p className="text-[11px] uppercase tracking-[0.25em] text-white/35 mb-3">
-                Entrega
-              </p>
-              <p className="text-sm text-white/55 leading-relaxed">
+            <div className="border-t border-white/20 pt-8 md:pl-16">
+              <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 mb-5">03</p>
+              <p className="text-[11px] uppercase tracking-[0.25em] text-white/60 mb-4">Entrega</p>
+              <p className="text-sm text-white/50 leading-relaxed">
                 Selección y edición cuidada para uso editorial, institucional y digital.
               </p>
             </div>
