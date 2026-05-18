@@ -81,7 +81,7 @@ export default function PhotographyPortfolio() {
           <div className="mt-8">
             <a
               href="#contact"
-              className="inline-flex items-center border border-white/20 px-6 py-3 rounded-full text-sm tracking-wide text-white hover:bg-white hover:text-black transition-all duration-300"
+              className="inline-flex items-center border border-white/25 px-8 py-4 text-xs tracking-[0.2em] uppercase text-white hover:bg-white hover:text-black transition-all duration-300"
             >
               Contacto
             </a>
