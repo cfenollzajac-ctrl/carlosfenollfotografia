@@ -154,13 +154,14 @@ export default function PhotographyPortfolio() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="py-24 px-6 md:px-16 border-t border-white/10">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 items-start">
+      <section id="contact" className="py-28 md:py-36 px-6 md:px-16 border-t border-white/10">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 md:gap-28 items-start">
           <div>
-            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight mb-6">
-              Contacto
+            <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 mb-6">— Contacto</p>
+            <h2 className="text-4xl md:text-5xl font-light tracking-tight leading-tight mb-8">
+              Trabajemos juntos
             </h2>
-            <p className="text-neutral-500 text-lg leading-relaxed">
+            <p className="text-white/40 text-sm leading-relaxed">
               Si te interesa trabajar conmigo, envíame un mensaje con algunos detalles sobre tu evento.
             </p>
           </div>
@@ -168,7 +169,7 @@ export default function PhotographyPortfolio() {
           <form
             action="https://api.web3forms.com/submit"
             method="POST"
-            className="space-y-6"
+            className="space-y-7"
             onSubmit={async (e) => {
               e.preventDefault();
               setIsSending(true);
@@ -193,40 +194,42 @@ export default function PhotographyPortfolio() {
               type="text"
               name="name"
               placeholder="Nombre completo"
-              className="w-full bg-transparent border border-white/15 rounded-2xl px-6 py-5 text-white placeholder:text-neutral-500 focus:outline-none focus:border-white transition-colors"
+              className="w-full bg-transparent border-b border-white/15 py-4 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-white/50 transition-colors"
             />
             <input
               type="email"
               name="email"
               placeholder="Correo electrónico"
-              className="w-full bg-transparent border border-white/15 rounded-2xl px-6 py-5 text-white placeholder:text-neutral-500 focus:outline-none focus:border-white transition-colors"
+              className="w-full bg-transparent border-b border-white/15 py-4 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-white/50 transition-colors"
             />
             <input
               type="text"
               name="event"
               placeholder="Tipo de evento"
-              className="w-full bg-transparent border border-white/15 rounded-2xl px-6 py-5 text-white placeholder:text-neutral-500 focus:outline-none focus:border-white transition-colors"
+              className="w-full bg-transparent border-b border-white/15 py-4 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-white/50 transition-colors"
             />
             <textarea
-              rows={5}
+              rows={4}
               name="message"
               placeholder="Cuéntame sobre tu evento..."
-              className="w-full bg-transparent border border-white/15 rounded-2xl px-6 py-5 text-white placeholder:text-neutral-500 focus:outline-none focus:border-white transition-colors"
+              className="w-full bg-transparent border-b border-white/15 py-4 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-white/50 transition-colors resize-none"
             />
 
-            <button
-              type="submit"
-              disabled={isSending}
-              className="w-full bg-white text-black rounded-2xl py-5 text-lg font-medium transition-all duration-300 hover:scale-[1.01] disabled:opacity-70"
-            >
-              {isSending ? "Enviando..." : isSent ? "Mensaje enviado" : "Enviar mensaje"}
-            </button>
+            <div className="pt-2">
+              <button
+                type="submit"
+                disabled={isSending}
+                className="w-full border border-white/25 py-4 text-xs tracking-[0.2em] uppercase text-white hover:bg-white hover:text-black transition-all duration-300 disabled:opacity-40"
+              >
+                {isSending ? "Enviando..." : isSent ? "Mensaje enviado" : "Enviar mensaje"}
+              </button>
 
-            {isSent && (
-              <p className="text-sm text-white/60 text-center pt-2 animate-pulse">
-                Gracias — responderé lo antes posible.
-              </p>
-            )}
+              {isSent && (
+                <p className="text-xs text-white/35 text-center pt-4 tracking-wide">
+                  Gracias — responderé lo antes posible.
+                </p>
+              )}
+            </div>
           </form>
         </div>
       </section>
