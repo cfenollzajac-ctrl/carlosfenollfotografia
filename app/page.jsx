@@ -35,15 +35,27 @@ export default function PhotographyPortfolio() {
   const projects = [
     {
       title: "Evento de Escuela de Cine",
-      images: ["/images/filmschool1.jpg", "/images/filmschool2.jpg", "/images/filmschool3.jpg"],
+      images: [
+        "/images/filmschool1.jpg",
+        "/images/filmschool2.jpg",
+        "/images/filmschool3.jpg",
+      ],
     },
     {
-      title: "Clase de Software de Postproduccion",
-      images: ["/images/class1.jpg", "/images/class2.jpg", "/images/class3.jpg"],
+      title: "Clase de Software de Postproducción",
+      images: [
+        "/images/class1.jpg",
+        "/images/class2.jpg",
+        "/images/class3.jpg",
+      ],
     },
     {
       title: "Visita Institucional",
-      images: ["/images/eu1.jpg", "/images/eu2.jpg", "/images/eu3.jpg"],
+      images: [
+        "/images/eu1.jpg",
+        "/images/eu2.jpg",
+        "/images/eu3.jpg",
+      ],
     },
   ];
 
@@ -67,7 +79,7 @@ export default function PhotographyPortfolio() {
             />
           </div>
           <p className="mt-6 text-sm md:text-base text-white/75 tracking-wide">
-            Fotografia de eventos - Madrid
+            Fotografía de eventos · Madrid
           </p>
           <div className="mt-8">
             <a
@@ -95,11 +107,15 @@ export default function PhotographyPortfolio() {
                       src={img}
                       alt={project.title}
                       className={`w-full object-cover object-center transition-transform duration-[1400ms] ease-out ${
-                        i % 5 === 0 ? "h-[42vh] md:h-[92vh]"
-                        : i % 5 === 1 ? "h-[38vh] md:h-[70vh]"
-                        : i % 5 === 2 ? "h-[46vh] md:h-[86vh]"
-                        : i % 5 === 3 ? "h-[40vh] md:h-[76vh]"
-                        : "h-[38vh] md:h-[100vh]"
+                        i % 5 === 0
+                          ? "h-[42vh] md:h-[92vh]"
+                          : i % 5 === 1
+                          ? "h-[38vh] md:h-[70vh]"
+                          : i % 5 === 2
+                          ? "h-[46vh] md:h-[86vh]"
+                          : i % 5 === 3
+                          ? "h-[40vh] md:h-[76vh]"
+                          : "h-[38vh] md:h-[100vh]"
                       } ${i % 2 === 0 ? "brightness-100" : "brightness-95"}`}
                     />
                   </div>
@@ -115,21 +131,27 @@ export default function PhotographyPortfolio() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="grid md:grid-cols-3 gap-10 md:gap-16">
             <div>
-              <p className="text-[11px] uppercase tracking-[0.25em] text-white/35 mb-3">Enfoque</p>
+              <p className="text-[11px] uppercase tracking-[0.25em] text-white/35 mb-3">
+                Enfoque
+              </p>
               <p className="text-sm text-white/55 leading-relaxed">
                 Cobertura natural y discreta, centrada en el ambiente y las personas.
               </p>
             </div>
             <div>
-              <p className="text-[11px] uppercase tracking-[0.25em] text-white/35 mb-3">Trabajo</p>
+              <p className="text-[11px] uppercase tracking-[0.25em] text-white/35 mb-3">
+                Trabajo
+              </p>
               <p className="text-sm text-white/55 leading-relaxed">
                 Eventos culturales, encuentros institucionales y espacios educativos.
               </p>
             </div>
             <div>
-              <p className="text-[11px] uppercase tracking-[0.25em] text-white/35 mb-3">Entrega</p>
+              <p className="text-[11px] uppercase tracking-[0.25em] text-white/35 mb-3">
+                Entrega
+              </p>
               <p className="text-sm text-white/55 leading-relaxed">
-                Seleccion y edicion cuidada para uso editorial, institucional y digital.
+                Selección y edición cuidada para uso editorial, institucional y digital.
               </p>
             </div>
           </div>
@@ -144,7 +166,7 @@ export default function PhotographyPortfolio() {
               Contacto
             </h2>
             <p className="text-neutral-500 text-lg leading-relaxed">
-              Si te interesa trabajar conmigo, enviame un mensaje con algunos detalles sobre tu evento.
+              Si te interesa trabajar conmigo, envíame un mensaje con algunos detalles sobre tu evento.
             </p>
           </div>
 
@@ -171,16 +193,43 @@ export default function PhotographyPortfolio() {
           >
             <input type="hidden" name="access_key" value="44068ee9-1d29-4d0d-bc5f-d7f291934609" />
             <input type="hidden" name="_captcha" value="false" />
-            <input type="text" name="name" placeholder="Nombre completo" className="w-full bg-transparent border border-white/15 rounded-2xl px-6 py-5 text-white placeholder:text-neutral-500 focus:outline-none focus:border-white transition-colors" />
-            <input type="email" name="email" placeholder="Correo electronico" className="w-full bg-transparent border border-white/15 rounded-2xl px-6 py-5 text-white placeholder:text-neutral-500 focus:outline-none focus:border-white transition-colors" />
-            <input type="text" name="event" placeholder="Tipo de evento" className="w-full bg-transparent border border-white/15 rounded-2xl px-6 py-5 text-white placeholder:text-neutral-500 focus:outline-none focus:border-white transition-colors" />
-            <textarea rows={5} name="message" placeholder="Cuentame sobre tu evento..." className="w-full bg-transparent border border-white/15 rounded-2xl px-6 py-5 text-white placeholder:text-neutral-500 focus:outline-none focus:border-white transition-colors" />
-            <button type="submit" disabled={isSending} className="w-full bg-white text-black rounded-2xl py-5 text-lg font-medium transition-all duration-300 hover:scale-[1.01] disabled:opacity-70">
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Nombre completo"
+              className="w-full bg-transparent border border-white/15 rounded-2xl px-6 py-5 text-white placeholder:text-neutral-500 focus:outline-none focus:border-white transition-colors"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo electrónico"
+              className="w-full bg-transparent border border-white/15 rounded-2xl px-6 py-5 text-white placeholder:text-neutral-500 focus:outline-none focus:border-white transition-colors"
+            />
+            <input
+              type="text"
+              name="event"
+              placeholder="Tipo de evento"
+              className="w-full bg-transparent border border-white/15 rounded-2xl px-6 py-5 text-white placeholder:text-neutral-500 focus:outline-none focus:border-white transition-colors"
+            />
+            <textarea
+              rows={5}
+              name="message"
+              placeholder="Cuéntame sobre tu evento..."
+              className="w-full bg-transparent border border-white/15 rounded-2xl px-6 py-5 text-white placeholder:text-neutral-500 focus:outline-none focus:border-white transition-colors"
+            />
+
+            <button
+              type="submit"
+              disabled={isSending}
+              className="w-full bg-white text-black rounded-2xl py-5 text-lg font-medium transition-all duration-300 hover:scale-[1.01] disabled:opacity-70"
+            >
               {isSending ? "Enviando..." : isSent ? "Mensaje enviado" : "Enviar mensaje"}
             </button>
+
             {isSent && (
               <p className="text-sm text-white/60 text-center pt-2 animate-pulse">
-                Gracias - respondere lo antes posible.
+                Gracias — responderé lo antes posible.
               </p>
             )}
           </form>
@@ -189,8 +238,9 @@ export default function PhotographyPortfolio() {
 
       {/* Footer */}
       <footer className="border-t border-white/10 py-10 text-center text-neutral-500 text-sm bg-black">
-        2026 Carlos Fenoll Photo
+        © 2026 Carlos Fenoll Photo
       </footer>
     </div>
   );
 }
+
