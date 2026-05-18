@@ -60,7 +60,7 @@ export default function PhotographyPortfolio() {
   ];
 
   return (
-    <div> className={`${inter.className} bg-black text-white`}>
+    <div className={`${inter.className} bg-black text-white`}>
       {/* Hero */}
       <section className="relative h-[92vh] md:h-screen overflow-hidden">
         <img
