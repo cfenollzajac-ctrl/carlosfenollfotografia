@@ -86,8 +86,7 @@ export default function PhotographyPortfolio() {
               Contacto
             </a>
           </div>
-          <div className="mt-12 flex flex-col items-center gap-2">
-            <span className="text-[9px] uppercase tracking-[0.3em] text-white/20">Scroll</span>
+          <div className="mt-12 flex flex-col items-center">
             <div className="w-px h-8 bg-gradient-to-b from-white/20 to-transparent animate-pulse" />
           </div>
         </div>
@@ -261,7 +260,6 @@ export default function PhotographyPortfolio() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] uppercase tracking-[0.2em] text-white/25">
           <span>© 2026 Carlos Fenoll Photo</span>
           <div className="flex gap-8">
-            <a href="mailto:cfenollzajac@gmail.com" className="hover:text-white/50 transition-colors">cfenollzajac@gmail.com</a>
             <a href="https://instagram.com/carlosfenollphoto" target="_blank" rel="noopener noreferrer" className="hover:text-white/50 transition-colors">Instagram</a>
           </div>
         </div>
