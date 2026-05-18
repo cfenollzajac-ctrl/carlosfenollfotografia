@@ -70,14 +70,11 @@ export default function PhotographyPortfolio() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
         <div className="absolute bottom-10 md:bottom-16 left-6 md:left-12 max-w-xl z-10">
-          <div className="relative w-[320px] md:w-[520px]">
-            <div className="absolute inset-0 bg-black/15 backdrop-blur-[2px] rounded-2xl" />
-            <img
-              src="/images/logo.png"
-              alt="Carlos Fenoll"
-              className="relative z-10 w-full h-auto object-contain opacity-95"
-            />
-          </div>
+          <img
+            src="/images/logo.png"
+            alt="Carlos Fenoll"
+            className="w-[160px] md:w-[260px] h-auto object-contain mix-blend-screen"
+          />
           <p className="mt-6 text-sm md:text-base text-white/75 tracking-wide">
             Fotografía de eventos · Madrid
           </p>
