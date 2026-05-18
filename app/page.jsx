@@ -90,7 +90,7 @@ export default function PhotographyPortfolio() {
       </section>
 
       {/* Fullscreen Gallery */}
-      <section id="gallery" className="bg-black py-12 md:py-20">
+      <section id="gallery" className="bg-black pt-2 md:pt-3 pb-12 md:pb-20">
         <div className="space-y-2 md:space-y-3">
           {projects.map((project, index) => (
             <div key={index} className="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-3 px-2 md:px-3">
