@@ -73,9 +73,9 @@ export default function PhotographyPortfolio() {
           <img
             src="/images/logo.png"
             alt="Carlos Fenoll"
-            className="w-[160px] md:w-[260px] h-auto object-contain mix-blend-screen"
+            className="w-[220px] md:w-[360px] h-auto object-contain mix-blend-screen"
           />
-          <p className="mt-6 text-sm md:text-base text-white/75 tracking-wide">
+          <p className="mt-3 text-sm md:text-base text-white/75 tracking-wide">
             Fotografía de eventos · Madrid
           </p>
           <div className="mt-8">
