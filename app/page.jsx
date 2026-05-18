@@ -91,33 +91,34 @@ export default function PhotographyPortfolio() {
 
       {/* Fullscreen Gallery */}
       <section id="gallery" className="bg-black py-12 md:py-20">
-        <div className="space-y-16 md:space-y-24">
+        <div className="space-y-2 md:space-y-3">
           {projects.map((project, index) => (
-            <div key={index} className="max-w-7xl mx-auto px-6 md:px-12">
-              <div className="grid grid-cols-1 gap-3 md:gap-5">
-                {project.images.map((img, i) => (
-                  <div
-                    key={i}
-                    className="group w-full overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out"
-                  >
-                    <img
-                      src={img}
-                      alt={project.title}
-                      className={`w-full object-cover object-center transition-transform duration-[1400ms] ease-out ${
-                        i % 5 === 0
-                          ? "h-[42vh] md:h-[92vh]"
-                          : i % 5 === 1
-                          ? "h-[38vh] md:h-[70vh]"
-                          : i % 5 === 2
-                          ? "h-[46vh] md:h-[86vh]"
-                          : i % 5 === 3
-                          ? "h-[40vh] md:h-[76vh]"
-                          : "h-[38vh] md:h-[100vh]"
-                      } ${i % 2 === 0 ? "brightness-100" : "brightness-95"}`}
-                    />
+            <div key={index} className="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-3 px-2 md:px-3">
+              {index % 2 === 0 ? (
+                <>
+                  <div className="md:col-span-12 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                    <img src={project.images[0]} alt={project.title} className="w-full h-[62vw] md:h-[78vh] object-cover object-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
                   </div>
-                ))}
-              </div>
+                  <div className="md:col-span-7 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                    <img src={project.images[1]} alt={project.title} className="w-full h-[62vw] md:h-[54vh] object-cover object-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                  </div>
+                  <div className="md:col-span-5 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                    <img src={project.images[2]} alt={project.title} className="w-full h-[62vw] md:h-[54vh] object-cover object-center brightness-95 transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="md:col-span-5 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                    <img src={project.images[0]} alt={project.title} className="w-full h-[62vw] md:h-[54vh] object-cover object-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                  </div>
+                  <div className="md:col-span-7 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                    <img src={project.images[1]} alt={project.title} className="w-full h-[62vw] md:h-[54vh] object-cover object-center brightness-95 transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                  </div>
+                  <div className="md:col-span-12 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                    <img src={project.images[2]} alt={project.title} className="w-full h-[62vw] md:h-[78vh] object-cover object-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                  </div>
+                </>
+              )}
             </div>
           ))}
         </div>
