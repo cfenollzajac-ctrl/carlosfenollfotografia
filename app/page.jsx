@@ -1,7 +1,7 @@
 "use client";
 
 import { Inter, DM_Serif_Display, Manrope } from "next/font/google";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,6 +17,8 @@ const manrope = Manrope({
 });
 
 export default function PhotographyPortfolio() {
+  const [isSending, setIsSending] = useState(false);
+const [isSent, setIsSent] = useState(false);
   useEffect(() => {
     const elements = document.querySelectorAll(".fade-item");
 
@@ -213,6 +215,34 @@ export default function PhotographyPortfolio() {
   action="https://api.web3forms.com/submit"
   method="POST"
   className="space-y-6"
+  onSubmit={async (e) => {
+    e.preventDefault();
+
+    setIsSending(true);
+
+    const formData = new FormData(e.target);
+
+    const response = await fetch(
+      "https://api.web3forms.com/submit",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+
+    const data = await response.json();
+
+    setIsSending(false);
+
+    if (data.success) {
+      setIsSent(true);
+      e.target.reset();
+
+      setTimeout(() => {
+        setIsSent(false);
+      }, 4000);
+    }
+  }}
 >
   <input
   type="hidden"
@@ -250,11 +280,21 @@ export default function PhotographyPortfolio() {
             />
 
             <button
-              type="submit"
-              className="w-full bg-white text-black rounded-2xl py-5 text-lg font-medium hover:scale-[1.01] transition-transform duration-300"
-            >
-              Enviar mensaje
-            </button>
+  type="submit"
+  disabled={isSending}
+  className="w-full bg-white text-black rounded-2xl py-5 text-lg font-medium transition-all duration-300 hover:scale-[1.01] disabled:opacity-70"
+>
+  {isSending
+    ? "Enviando..."
+    : isSent
+    ? "Mensaje enviado"
+    : "Enviar mensaje"}
+</button>
+{isSent && (
+  <p className="text-sm text-white/60 text-center pt-2 animate-pulse">
+    Gracias — responderé lo antes posible.
+  </p>
+)}
           </form>
 
         </div>
