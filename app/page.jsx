@@ -86,6 +86,10 @@ export default function PhotographyPortfolio() {
               Contacto
             </a>
           </div>
+          <div className="mt-12 flex flex-col items-center gap-2">
+            <span className="text-[9px] uppercase tracking-[0.3em] text-white/20">Scroll</span>
+            <div className="w-px h-8 bg-gradient-to-b from-white/20 to-transparent animate-pulse" />
+          </div>
         </div>
       </section>
 
@@ -96,26 +100,44 @@ export default function PhotographyPortfolio() {
             <div key={index} className="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-3 px-2 md:px-3">
               {index % 2 === 0 ? (
                 <>
-                  <div className="md:col-span-12 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                  <div className="relative md:col-span-12 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
                     <img src={project.images[0]} alt={project.title} className="w-full h-[62vw] md:h-[78vh] object-cover object-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
+                      <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
+                    </div>
                   </div>
-                  <div className="md:col-span-7 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                  <div className="relative md:col-span-7 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
                     <img src={project.images[1]} alt={project.title} className="w-full h-[62vw] md:h-[54vh] object-cover object-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
+                      <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
+                    </div>
                   </div>
-                  <div className="md:col-span-5 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                  <div className="relative md:col-span-5 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
                     <img src={project.images[2]} alt={project.title} className="w-full h-[62vw] md:h-[54vh] object-cover object-center brightness-95 transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
+                      <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
+                    </div>
                   </div>
                 </>
               ) : (
                 <>
-                  <div className="md:col-span-5 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                  <div className="relative md:col-span-5 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
                     <img src={project.images[0]} alt={project.title} className="w-full h-[62vw] md:h-[54vh] object-cover object-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
+                      <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
+                    </div>
                   </div>
-                  <div className="md:col-span-7 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                  <div className="relative md:col-span-7 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
                     <img src={project.images[1]} alt={project.title} className="w-full h-[62vw] md:h-[54vh] object-cover object-center brightness-95 transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
+                      <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
+                    </div>
                   </div>
-                  <div className="md:col-span-12 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                  <div className="relative md:col-span-12 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
                     <img src={project.images[2]} alt={project.title} className="w-full h-[62vw] md:h-[78vh] object-cover object-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
+                      <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
+                    </div>
                   </div>
                 </>
               )}
@@ -235,8 +257,14 @@ export default function PhotographyPortfolio() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 py-10 text-center text-neutral-500 text-sm bg-black">
-        © 2026 Carlos Fenoll Photo
+      <footer className="border-t border-white/10 py-10 bg-black">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] uppercase tracking-[0.2em] text-white/25">
+          <span>© 2026 Carlos Fenoll Photo</span>
+          <div className="flex gap-8">
+            <a href="mailto:cfenollzajac@gmail.com" className="hover:text-white/50 transition-colors">cfenollzajac@gmail.com</a>
+            <a href="https://instagram.com/carlosfenoll" target="_blank" rel="noopener noreferrer" className="hover:text-white/50 transition-colors">Instagram</a>
+          </div>
+        </div>
       </footer>
     </div>
   );
