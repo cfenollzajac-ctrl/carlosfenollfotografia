@@ -204,7 +204,7 @@ export default function PhotographyPortfolio() {
               Trabajemos juntos
             </h2>
             <p className="text-white/40 text-sm leading-relaxed">
-              Si te interesa trabajar conmigo, envíame un mensaje con algunos detalles sobre tu evento.
+              Cada evento es diferente. Cuéntame los detalles y te preparo un presupuesto sin compromiso.
             </p>
           </div>
 
