@@ -184,8 +184,8 @@ export default function PhotographyPortfolio() {
       {/* Bio */}
       <section className="py-24 md:py-32 px-6 md:px-16 border-t border-white/10 bg-neutral-950">
         <div className="max-w-5xl mx-auto">
-          <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 mb-8">— Sobre mí</p>
-          <p className="text-base md:text-lg text-white/65 leading-relaxed max-w-2xl">
+          <p className="text-[10px] uppercase tracking-[0.3em] text-white/35 mb-10">— Sobre mí</p>
+          <p className={`${cormorant.className} text-2xl md:text-3xl font-light text-white/80 leading-relaxed max-w-2xl pl-5 border-l border-white/20`}>
             Soy Carlos, diplomado en cine documental, y fotógrafo especializado en eventos culturales e institucionales en Madrid. Trabajo de forma discreta y entregada, para que cada imagen refleje el ambiente real del evento.
           </p>
           <div className="mt-14 pt-10 border-t border-white/10 flex flex-col md:flex-row md:items-center gap-8 md:gap-14">
