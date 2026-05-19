@@ -176,27 +176,21 @@ export default function PhotographyPortfolio() {
 
       {/* Contact */}
       {/* Bio */}
-      <section className="py-20 md:py-28 px-6 md:px-16 border-t border-white/10 bg-neutral-950">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 md:gap-28 items-start">
-          <div>
-            <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 mb-6">— Sobre mí</p>
-            <p className="text-sm text-white/55 leading-relaxed">
-              Soy Carlos, diplomado en cine documental, y fotógrafo especializado en eventos culturales e institucionales en Madrid. Trabajo de forma discreta y entregada, para que cada imagen refleje el ambiente real del evento.
-            </p>
-          </div>
-          <div>
-            <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 mb-8">He trabajado con</p>
-            <div className="flex items-center gap-10">
-              <img
-                src="/images/logo-ecam.png"
-                alt="ECAM"
-                className="h-7 w-auto object-contain mix-blend-screen opacity-80"
-              />
-              <img
-                src="/images/logo-cinelenses.png"
-                alt="CineLenses"
-                className="h-7 w-auto object-contain mix-blend-screen opacity-80"
-              />
+      <section className="py-24 md:py-32 px-6 md:px-16 border-t border-white/10 bg-neutral-950">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 mb-8">— Sobre mí</p>
+          <p className="text-base md:text-lg text-white/55 leading-relaxed max-w-2xl">
+            Soy Carlos, diplomado en cine documental, y fotógrafo especializado en eventos culturales e institucionales en Madrid. Trabajo de forma discreta y entregada, para que cada imagen refleje el ambiente real del evento.
+          </p>
+          <div className="mt-14 pt-10 border-t border-white/10 flex flex-col md:flex-row md:items-center gap-8 md:gap-14">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 shrink-0">He trabajado con</p>
+            <div className="flex items-center gap-12">
+              <a href="https://ecam.es/" target="_blank" rel="noopener noreferrer">
+                <img src="/images/logo-ecam.png" alt="ECAM" className="h-10 w-auto object-contain mix-blend-screen opacity-75 hover:opacity-100 transition-opacity duration-300" />
+              </a>
+              <a href="https://cinelenses.com/" target="_blank" rel="noopener noreferrer">
+                <img src="/images/logo-cinelenses.png" alt="CineLenses" className="h-10 w-auto object-contain mix-blend-screen opacity-75 hover:opacity-100 transition-opacity duration-300" />
+              </a>
             </div>
           </div>
         </div>
