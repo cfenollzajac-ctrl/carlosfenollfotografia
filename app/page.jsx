@@ -261,6 +261,7 @@ export default function PhotographyPortfolio() {
           <span>© 2026 Carlos Fenoll Photo</span>
           <div className="flex gap-8">
             <a href="https://instagram.com/carlosfenollphoto" target="_blank" rel="noopener noreferrer" className="hover:text-white/50 transition-colors">Instagram</a>
+            <a href="https://www.linkedin.com/in/carlos-fenoll-zajac/" target="_blank" rel="noopener noreferrer" className="hover:text-white/50 transition-colors">LinkedIn</a>
           </div>
         </div>
       </footer>
