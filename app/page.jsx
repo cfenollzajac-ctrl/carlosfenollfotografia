@@ -235,25 +235,28 @@ export default function PhotographyPortfolio() {
             <input
               type="text"
               name="name"
-              placeholder="Nombre completo"
+              placeholder="Nombre"
+              required
               className="w-full bg-transparent border-b border-white/15 py-4 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-white/50 transition-colors"
             />
             <input
-              type="email"
-              name="email"
-              placeholder="Correo electrónico"
+              type="text"
+              name="contact"
+              placeholder="Teléfono o correo electrónico"
+              required
               className="w-full bg-transparent border-b border-white/15 py-4 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-white/50 transition-colors"
             />
             <input
               type="text"
               name="event"
               placeholder="Tipo de evento"
+              required
               className="w-full bg-transparent border-b border-white/15 py-4 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-white/50 transition-colors"
             />
             <textarea
               rows={4}
               name="message"
-              placeholder="Cuéntame sobre tu evento..."
+              placeholder="Detalles sobre tu evento..."
               className="w-full bg-transparent border-b border-white/15 py-4 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-white/50 transition-colors resize-none"
             />
 
