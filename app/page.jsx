@@ -75,7 +75,7 @@ export default function PhotographyPortfolio() {
             alt="Carlos Fenoll"
             className="w-[280px] md:w-[440px] h-auto object-contain mix-blend-screen"
           />
-          <p className="mt-1 text-sm md:text-base text-white/75 tracking-wide">
+          <p className="mt-1 text-sm md:text-base text-white/75 tracking-wide text-center">
             Cobertura de eventos culturales, académicos e institucionales.
           </p>
           <div className="mt-8">
