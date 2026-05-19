@@ -175,6 +175,33 @@ export default function PhotographyPortfolio() {
       </section>
 
       {/* Contact */}
+      {/* Bio */}
+      <section className="py-20 md:py-28 px-6 md:px-16 border-t border-white/10 bg-neutral-950">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 md:gap-28 items-start">
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 mb-6">— Sobre mí</p>
+            <p className="text-sm text-white/55 leading-relaxed">
+              Soy Carlos, diplomado en cine documental, y fotógrafo especializado en eventos culturales e institucionales en Madrid. Trabajo de forma discreta y entregada, para que cada imagen refleje el ambiente real del evento.
+            </p>
+          </div>
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 mb-8">He trabajado con</p>
+            <div className="flex items-center gap-10">
+              <img
+                src="/images/logo-ecam.png"
+                alt="ECAM"
+                className="h-7 w-auto object-contain mix-blend-screen opacity-80"
+              />
+              <img
+                src="/images/logo-cinelenses.png"
+                alt="CineLenses"
+                className="h-7 w-auto object-contain mix-blend-screen opacity-80"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="py-28 md:py-36 px-6 md:px-16 border-t border-white/10">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 md:gap-28 items-start">
           <div>
