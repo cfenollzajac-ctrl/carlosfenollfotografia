@@ -1,10 +1,16 @@
 ﻿"use client";
 
-import { Inter } from "next/font/google";
+import { Inter, Cormorant_Garamond } from "next/font/google";
 import { useEffect, useState } from "react";
 
 const inter = Inter({
   subsets: ["latin"],
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400"],
+  style: ["normal", "italic"],
 });
 
 export default function PhotographyPortfolio() {
@@ -149,24 +155,24 @@ export default function PhotographyPortfolio() {
       <section className="py-20 md:py-28 bg-neutral-950">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="grid md:grid-cols-3">
-            <div className="border-t border-white/20 pt-8 pb-12 md:pb-0 md:pr-16">
-              <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 mb-5">01</p>
-              <p className="text-[11px] uppercase tracking-[0.25em] text-white/60 mb-4">Enfoque</p>
-              <p className="text-sm text-white/50 leading-relaxed">
+            <div className="border-t border-white/15 pt-8 pb-12 md:pb-0 md:pr-16">
+              <p className="text-[52px] font-light text-white/[0.06] leading-none mb-4">01</p>
+              <p className={`${cormorant.className} text-lg italic font-light text-white/70 mb-3`}>Enfoque</p>
+              <p className="text-sm text-white/45 leading-relaxed">
                 Cobertura natural y discreta, centrada en el ambiente y las personas.
               </p>
             </div>
-            <div className="border-t border-white/20 pt-8 pb-12 md:pb-0 md:px-16">
-              <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 mb-5">02</p>
-              <p className="text-[11px] uppercase tracking-[0.25em] text-white/60 mb-4">Trabajo</p>
-              <p className="text-sm text-white/50 leading-relaxed">
+            <div className="border-t border-white/15 pt-8 pb-12 md:pb-0 md:px-16">
+              <p className="text-[52px] font-light text-white/[0.06] leading-none mb-4">02</p>
+              <p className={`${cormorant.className} text-lg italic font-light text-white/70 mb-3`}>Trabajo</p>
+              <p className="text-sm text-white/45 leading-relaxed">
                 Eventos culturales, encuentros institucionales y espacios educativos.
               </p>
             </div>
-            <div className="border-t border-white/20 pt-8 md:pl-16">
-              <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 mb-5">03</p>
-              <p className="text-[11px] uppercase tracking-[0.25em] text-white/60 mb-4">Entrega</p>
-              <p className="text-sm text-white/50 leading-relaxed">
+            <div className="border-t border-white/15 pt-8 md:pl-16">
+              <p className="text-[52px] font-light text-white/[0.06] leading-none mb-4">03</p>
+              <p className={`${cormorant.className} text-lg italic font-light text-white/70 mb-3`}>Entrega</p>
+              <p className="text-sm text-white/45 leading-relaxed">
                 Selección y edición cuidada para uso editorial, institucional y digital.
               </p>
             </div>
@@ -179,7 +185,7 @@ export default function PhotographyPortfolio() {
       <section className="py-24 md:py-32 px-6 md:px-16 border-t border-white/10 bg-neutral-950">
         <div className="max-w-5xl mx-auto">
           <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 mb-8">— Sobre mí</p>
-          <p className="text-base md:text-lg text-white/55 leading-relaxed max-w-2xl">
+          <p className="text-base md:text-lg text-white/65 leading-relaxed max-w-2xl">
             Soy Carlos, diplomado en cine documental, y fotógrafo especializado en eventos culturales e institucionales en Madrid. Trabajo de forma discreta y entregada, para que cada imagen refleje el ambiente real del evento.
           </p>
           <div className="mt-14 pt-10 border-t border-white/10 flex flex-col md:flex-row md:items-center gap-8 md:gap-14">
@@ -200,10 +206,10 @@ export default function PhotographyPortfolio() {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 md:gap-28 items-start">
           <div>
             <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 mb-6">— Contacto</p>
-            <h2 className="text-4xl md:text-5xl font-light tracking-tight leading-tight mb-8">
+            <h2 className={`${cormorant.className} text-5xl md:text-6xl font-light italic leading-tight mb-8`}>
               Trabajemos juntos
             </h2>
-            <p className="text-white/40 text-sm leading-relaxed">
+            <p className="text-white/50 text-sm leading-relaxed">
               Cada evento es diferente. Cuéntame los detalles y te preparo un presupuesto sin compromiso.
             </p>
           </div>
