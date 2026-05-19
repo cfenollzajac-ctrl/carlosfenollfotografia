@@ -192,10 +192,10 @@ export default function PhotographyPortfolio() {
             <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 shrink-0">He trabajado con</p>
             <div className="flex items-center gap-12">
               <a href="https://ecam.es/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/logo-ecam.png" alt="ECAM" className="h-10 w-auto object-contain mix-blend-screen opacity-75 hover:opacity-100 transition-opacity duration-300" />
+                <img src="/images/logo-ecam.png" alt="ECAM" className="h-14 w-auto object-contain mix-blend-screen opacity-75 hover:opacity-100 transition-opacity duration-300" />
               </a>
               <a href="https://cinelenses.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/images/logo-cinelenses.png" alt="CineLenses" className="h-10 w-auto object-contain mix-blend-screen opacity-75 hover:opacity-100 transition-opacity duration-300" />
+                <img src="/images/logo-cinelenses.png" alt="CineLenses" className="h-14 w-auto object-contain mix-blend-screen opacity-75 hover:opacity-100 transition-opacity duration-300" />
               </a>
             </div>
           </div>
@@ -205,8 +205,8 @@ export default function PhotographyPortfolio() {
       <section id="contact" className="py-28 md:py-36 px-6 md:px-16 border-t border-white/10">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 md:gap-28 items-start">
           <div>
-            <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 mb-6">— Contacto</p>
-            <h2 className={`${cormorant.className} text-5xl md:text-6xl font-light italic leading-tight mb-8`}>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-white/25 mb-4">— Contacto</p>
+            <h2 className={`${cormorant.className} text-5xl md:text-6xl font-light italic leading-tight mb-5`}>
               Trabajemos juntos
             </h2>
             <p className="text-white/50 text-sm leading-relaxed">
