@@ -51,8 +51,6 @@ export default function PhotographyPortfolio() {
       title: "Clase de Software de Postproducción",
       images: [
         "/images/class1.jpg",
-        "/images/class2.jpg",
-        "/images/class3.jpg",
       ],
     },
     {
@@ -60,7 +58,6 @@ export default function PhotographyPortfolio() {
       images: [
         "/images/eu1.jpg",
         "/images/eu2.jpg",
-        "/images/eu3.jpg",
       ],
     },
   ];
@@ -103,22 +100,44 @@ export default function PhotographyPortfolio() {
         <div className="space-y-2 md:space-y-3">
           {projects.map((project, index) => (
             <div key={index} className="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-3 px-2 md:px-3">
-              {index % 2 === 0 ? (
-                <>
-                  <div className="relative md:col-span-12 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
-                    <img src={project.images[0]} alt={project.title} className={`w-full h-[62vw] md:h-[78vh] object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02] ${index === 2 ? 'object-[center_20%]' : 'object-center'}`} />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
-                      <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
-                    </div>
+              {project.images.length === 1 ? (
+                <div className="relative md:col-span-12 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                  <img src={project.images[0]} alt={project.title} className="w-full h-[62vw] md:h-[78vh] object-cover object-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
+                    <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
                   </div>
+                </div>
+              ) : project.images.length === 2 ? (
+                <>
                   <div className="relative md:col-span-7 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
-                    <img src={project.images[1]} alt={project.title} className={`w-full h-[62vw] md:h-[54vh] object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02] ${index === 2 ? 'object-[center_20%]' : 'object-center'}`} />
+                    <img src={project.images[0]} alt={project.title} className={`w-full h-[62vw] md:h-[54vh] object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02] ${index === 2 ? 'object-[center_20%]' : 'object-center'}`} />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
                       <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
                     </div>
                   </div>
                   <div className="relative md:col-span-5 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
-                    <img src={project.images[2]} alt={project.title} className={`w-full h-[62vw] md:h-[54vh] object-cover brightness-95 transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02] ${index === 2 ? 'object-[center_20%]' : 'object-center'}`} />
+                    <img src={project.images[1]} alt={project.title} className={`w-full h-[62vw] md:h-[54vh] object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02] ${index === 2 ? 'object-[center_20%]' : 'object-center'}`} />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
+                      <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
+                    </div>
+                  </div>
+                </>
+              ) : index % 2 === 0 ? (
+                <>
+                  <div className="relative md:col-span-12 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                    <img src={project.images[0]} alt={project.title} className="w-full h-[62vw] md:h-[78vh] object-cover object-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
+                      <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
+                    </div>
+                  </div>
+                  <div className="relative md:col-span-7 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                    <img src={project.images[1]} alt={project.title} className="w-full h-[62vw] md:h-[54vh] object-cover object-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
+                      <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
+                    </div>
+                  </div>
+                  <div className="relative md:col-span-5 overflow-hidden fade-item opacity-0 translate-y-6 blur-sm transition-all duration-[900ms] ease-out group">
+                    <img src={project.images[2]} alt={project.title} className="w-full h-[62vw] md:h-[54vh] object-cover brightness-95 object-center transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]" />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-700 hidden md:flex items-end p-6">
                       <p className="text-[9px] uppercase tracking-[0.3em] text-white/0 group-hover:text-white/55 transition-colors duration-700">{project.title}</p>
                     </div>
