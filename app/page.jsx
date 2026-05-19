@@ -76,7 +76,7 @@ export default function PhotographyPortfolio() {
             className="w-[280px] md:w-[440px] h-auto object-contain mix-blend-screen"
           />
           <p className="mt-1 text-sm md:text-base text-white/75 tracking-wide">
-            Fotografía de eventos · Madrid
+            Cobertura de eventos culturales, académicos e institucionales.
           </p>
           <div className="mt-8">
             <a
