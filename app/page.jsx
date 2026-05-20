@@ -251,6 +251,7 @@ export default function PhotographyPortfolio() {
                 setIsSent(true);
                 e.target.reset();
                 setTimeout(() => setIsSent(false), 4000);
+                if (typeof fbq !== "undefined") fbq("track", "Lead");
               }
             }}
           >
