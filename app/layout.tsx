@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "Carlos Fenoll - Fotografía",
+  title: "Carlos Fenoll — Fotografía",
   description: "Fotografía de eventos",
-  icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
-  },
 };
 
 export default function RootLayout({
@@ -17,8 +24,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="h-full antialiased">
+    <html
+      lang="es"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col">
+
         <Script id="facebook-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -35,7 +46,9 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+
         {children}
+
       </body>
     </html>
   );
